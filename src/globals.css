@@ -56,6 +56,20 @@ p {
 	margin-right: auto;
 }
 
+.socials {
+	margin-top: 1.5rem;
+	display: flex;
+	gap: 3rem;
+}
+
+@media (max-width: 768px) {
+	.socials {
+		display: inline-flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+}
+
 @media (min-width: 768px) {
 	h1 {
 		font-size: 3rem /* 48px */;

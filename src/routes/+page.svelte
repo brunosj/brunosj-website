@@ -25,7 +25,7 @@
 		<h2 in:fly={{ delay: 300, y: 100, duration: 600 }}>web developper & artist</h2>
 
 		<p in:fade={{ delay: 500, duration: 600 }}>
-			hi! my name is <span>bruno sj</span> and I am a web developper and artist based in Berlin.
+			hi! my name is <span>bruno sj</span> and I am Berlin-based creative working with code and music.
 		</p>
 	</section>
 {/if}

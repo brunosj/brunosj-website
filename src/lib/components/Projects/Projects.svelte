@@ -3,53 +3,59 @@
 	import { films } from '$lib/data/film';
 	import Heading from '$components/Nav/Heading.svelte';
 	import Subheading from '$components/Nav/Subheading.svelte';
+	import { onMount } from 'svelte';
+	import { fade, fly } from 'svelte/transition';
+	let animate = false;
 
-	// Sort releases by year (newest to oldest)
+	onMount(() => {
+		animate = true;
+	});
+
 	releases.sort((a, b) => b.year - a.year);
-
-	// Sort films by year (newest to oldest)
 	films.sort((a, b) => b.year - a.year);
 </script>
 
-<section class="">
-	<Subheading title="releases" />
-	<ul class="releases">
-		{#each releases as release}
-			<a href={release.stream} target="_blank" rel="noreferrer" class="releaseWrapper">
-				<li class="release">
+{#if animate}
+	<section in:fade={{ delay: 600, duration: 600 }}>
+		<Subheading title="releases" />
+		<ul class="releases">
+			{#each releases as release}
+				<a href={release.stream} target="_blank" rel="noreferrer" class="releaseWrapper">
+					<li class="release">
+						<h4>
+							{release.artist}
+						</h4>
+						<p>
+							{release.title}
+						</p>
+						<p>-</p>
+						<p>
+							{release.year}
+						</p>
+					</li>
+				</a>
+			{/each}
+		</ul>
+	</section>
+	<section>
+		<Subheading title="film soundtracks" />
+		<ul class="soundtracks">
+			{#each films as film}
+				<li class="soundtrack">
 					<h4>
-						{release.artist}
+						{film.name}
 					</h4>
 					<p>
-						{release.title}
+						{film.year}
 					</p>
-					<p>-</p>
 					<p>
-						{release.year}
+						Directed by: {film.director}
 					</p>
 				</li>
-			</a>
-		{/each}
-	</ul>
-</section>
-<section>
-	<Subheading title="film soundtracks" />
-	<ul class="soundtracks">
-		{#each films as film}
-			<li class="soundtrack">
-				<h4>
-					{film.name}
-				</h4>
-				<p>
-					{film.year}
-				</p>
-				<p>
-					Directed by: {film.director}
-				</p>
-			</li>
-		{/each}
-	</ul>
-</section>
+			{/each}
+		</ul>
+	</section>
+{/if}
 
 <style>
 	.releases {
