@@ -17,16 +17,8 @@
 	<section class="layout" in:fly={{ y: 100, duration: 600 }}>
 		<Heading title="web development" />
 		<p>
-			I'm a developer who enjoys bringing ideas to life on the web. In terms of technologies, my
-			tools of choice are <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"
-				>JavaScript/TypeScript</a>
-			and frameworks such as
-			<a href="https://kit.svelte.dev/" target="_blank" rel="noreferrer">SvelteKit</a>
-			and
-			<a href="https://nextjs.org/" target="_blank" rel="noreferrer">Next.js</a>. I'm particularly
-			interested in dynamic and interactive data visualization, which builds on my
-			<a href="https://github.com/brunosj/dna-copyright/" target="_blank" rel="noreferrer"
-				>previous experience</a> with statistical software.
+			I'm a developer who enjoys bringing ideas to life on the web. My programming is mostly focused
+			on front-end web development and interactive data vizualizations.
 		</p>
 		<p class="paragraph">
 			My portfolio can be consulted at <a
