@@ -14,7 +14,7 @@
 	});
 </script>
 
-<Seo title="landozone" />
+<Seo title="bruno sj" />
 
 {#if animate}
 	<section class="layout">
