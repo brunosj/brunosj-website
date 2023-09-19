@@ -1,18 +1,18 @@
 export const menu = [
 	{
-		name: 'Home',
+		name: 'home',
 		slug: '/'
 	},
 	{
-		name: 'About',
-		slug: '/about'
+		name: 'dev',
+		slug: '/dev'
 	},
 	{
-		name: 'Projects',
-		slug: '/projects'
+		name: 'music',
+		slug: '/music'
 	},
 	{
-		name: 'Contact',
+		name: 'contact',
 		slug: '/contact'
 	}
 ];

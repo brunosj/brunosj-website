@@ -1,7 +1,8 @@
 <script lang="ts">
-	import About from '$components/About/About.svelte';
+	import Dev from '$components/Dev/Dev.svelte';
 	import Contact from '$components/Contact/Contact.svelte';
-	import Projects from '$components/Projects/Projects.svelte';
+
+	import Music from '$components/Music/Music.svelte';
 	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
 	import Logo from '$lib/assets/svg/logo.svelte';
@@ -20,24 +21,22 @@
 		<div class="logoWrapper">
 			<Logo />
 		</div>
-		<h1 in:fly={{ y: 100, duration: 600 }}>landozone</h1>
-		<h2 in:fly={{ delay: 300, y: 100, duration: 600 }}>imaginative web development</h2>
+		<h1 in:fly={{ y: 100, duration: 600 }}>bruno sj</h1>
+		<h2 in:fly={{ delay: 300, y: 100, duration: 600 }}>web developper & artist</h2>
 
 		<p in:fade={{ delay: 500, duration: 600 }}>
-			hi! my name is <span class="name">bruno sj</span> and I am a freelance full stack developer based
-			in Berlin. I enjoy working on creative projects where I can bring my expertise to develop meaningful
-			and innovative websites and applications.
+			hi! my name is <span>bruno sj</span> and I am a web developper and artist based in Berlin.
 		</p>
 	</section>
 {/if}
 
 {#if animate}
 	<div class="mobileSection" in:fade={{ delay: 500, duration: 600 }}>
-		<About />
+		<Dev />
 	</div>
 
 	<div class="mobileSection" in:fade={{ delay: 500, duration: 600 }}>
-		<Projects />
+		<Music />
 	</div>
 
 	<div class="mobileSection" in:fade={{ delay: 500, duration: 600 }}>
@@ -48,12 +47,22 @@
 <style>
 	h1 {
 		font-weight: 700;
-		color: #00ffcd;
+		color: #eb6027;
 		line-height: 1;
 	}
 
 	p {
 		padding-top: 3rem /* 48px */;
+	}
+
+	a {
+		font-family: IBMPlexMono;
+		background-color: #394053;
+		transition: all 300ms;
+	}
+
+	a:hover {
+		background-color: #586380;
 	}
 
 	.name {

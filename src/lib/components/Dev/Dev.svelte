@@ -3,10 +3,11 @@
 	import LinkedIn from '$lib/assets/svg/linkedIn.svelte';
 	import Social from '$components/Socials/Social.svelte';
 	import Github from '$lib/assets/svg/github.svelte';
+	import Website from '$lib/assets/svg/website.svelte';
 </script>
 
 <section class="layout">
-	<Heading title="about me" />
+	<Heading title="web development" />
 	<p>
 		I'm a developer who enjoys bringing ideas to life on the web. In terms of technologies, my tools
 		of choice are <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"
@@ -20,12 +21,15 @@
 			>previous experience</a> with statistical software.
 	</p>
 	<p class="paragraph">
-		My background is in political science and civil society organizations. My experience in the
-		climate policy field has given me (some) insights into ways to support a more sustainable and
-		inclusive world, and I'm excited to combine this knowledge with my programming skills to tackle
-		environmental and social issues.
+		My portfolio can be consulted at <a
+			href="https://landozone.net"
+			target="_blank"
+			rel="noreferrer">landozone.net</a>
 	</p>
 	<div class="socials">
+		<Social name="Website" url="https://landozone.net">
+			<Website />
+		</Social>
 		<Social name="Github" url="https://github.com/brunosj">
 			<Github />
 		</Social>
@@ -38,12 +42,12 @@
 <style>
 	a {
 		font-family: IBMPlexMono;
-		background-color: #c1bff6;
+		background-color: #394053;
 		transition: all 300ms;
 	}
 
 	a:hover {
-		background-color: #9795f0;
+		background-color: #586380;
 	}
 
 	.paragraph {
@@ -54,5 +58,13 @@
 		margin-top: 2.5rem;
 		display: flex;
 		gap: 3rem;
+	}
+
+	@media (max-width: 768px) {
+		.socials {
+			display: inline-flex;
+			flex-direction: column;
+			gap: 1rem;
+		}
 	}
 </style>

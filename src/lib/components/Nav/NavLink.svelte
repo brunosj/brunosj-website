@@ -17,7 +17,7 @@
 
 <style>
 	a.active {
-		background-color: #9795f0;
+		background-color: #586380;
 		transition: all 300ms;
 		font-weight: 700;
 		/* padding: 0.2rem 0.5rem; */
@@ -41,7 +41,7 @@
 		top: 0;
 		height: 100%;
 		width: 100%;
-		background-color: #c1bff6;
+		background-color: #394053;
 		z-index: -1;
 		transform: rotateX(90deg);
 		transition: all 300ms;
@@ -53,6 +53,6 @@
 	}
 
 	/* a:hover {
-		color: #c1bff6;
+		color: #394053;
 	} */
 </style>

@@ -14,9 +14,12 @@
 		<h2 in:fly={{ delay: 300, y: 100, duration: 600 }}>imaginative web development</h2>
 
 		<h3 in:fade={{ delay: 500, duration: 600 }}>
-			hi! my name is <span>bruno sj</span> and I am a freelance full stack developer based in Berlin.
-			I enjoy working on creative projects where I can bring my expertise to work towards meaningful
-			and innovative websites and applications.
+			hi! my name is <span>bruno sj</span> and I am a web developper and artist based in Berlin. I
+			produce music and deejay under the alias
+			<a href="https://www.instagram.com/lando.rozay" target="_blank" rel="noreferrer"
+				>Orlando Rosé</a
+			>. I enjoy working on creative projects where I can bring my expertise to work towards
+			meaningful and innovative websites and applications.
 		</h3>
 	</section>
 {/if}
@@ -24,7 +27,7 @@
 <style>
 	h1 {
 		font-weight: 700;
-		color: #00ffcd;
+		color: #eb6027;
 		line-height: 1;
 	}
 

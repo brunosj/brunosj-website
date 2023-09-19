@@ -1,8 +1,6 @@
-![landozone](static/lz_logo_seo.jpg)
-
 ## Description
 
-This repo contains the website of my personal portfolio, [landozone.net](https://landozone.net).
+This repo contains the my personal website, [brunosj.com](https://brunosj.com).
 
 ## Technologies
 
@@ -13,7 +11,7 @@ The site is a minimalist [Sveltekit](https://kit.svelte.dev/) project deployed o
 1. Use the git CLI to close the repo
 
 ```
-gh repo clone brunosj/landozone
+gh repo clone brunosj/brunosj-website
 ```
 
 2. Install dependencies

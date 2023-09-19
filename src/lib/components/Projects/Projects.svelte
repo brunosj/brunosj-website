@@ -1,54 +1,118 @@
 <script lang="ts">
-	import { projects } from '$data/projects';
+	import { releases } from '$lib/data/releases';
+	import { films } from '$lib/data/film';
 	import Heading from '$components/Nav/Heading.svelte';
+	import Subheading from '$components/Nav/Subheading.svelte';
+
+	// Sort releases by year (newest to oldest)
+	releases.sort((a, b) => b.year - a.year);
+
+	// Sort films by year (newest to oldest)
+	films.sort((a, b) => b.year - a.year);
 </script>
 
-<section class="layout">
-	<Heading title="recent projects" />
-	<ul>
-		{#each projects as project}
-			<li>
-				<h3>
-					{project.name}
-				</h3>
-				<p>
-					{project.description}
-				</p>
-				<a href={project.url} target="_blank" rel="noreferrer">
-					<p class="link">
-						{project.url.slice(8, -1)}
+<section class="">
+	<Subheading title="releases" />
+	<ul class="releases">
+		{#each releases as release}
+			<a href={release.stream} target="_blank" rel="noreferrer" class="releaseWrapper">
+				<li class="release">
+					<h4>
+						{release.artist}
+					</h4>
+					<p>
+						{release.title}
 					</p>
-				</a>
+					<p>-</p>
+					<p>
+						{release.year}
+					</p>
+				</li>
+			</a>
+		{/each}
+	</ul>
+</section>
+<section>
+	<Subheading title="film soundtracks" />
+	<ul class="soundtracks">
+		{#each films as film}
+			<li class="soundtrack">
+				<h4>
+					{film.name}
+				</h4>
+				<p>
+					{film.year}
+				</p>
+				<p>
+					Directed by: {film.director}
+				</p>
 			</li>
 		{/each}
 	</ul>
 </section>
 
 <style>
-	ul {
+	.releases {
 		display: flex;
+		gap: 2rem;
 		flex-wrap: wrap;
-		justify-content: space-between;
 	}
 
-	li {
-		padding-bottom: 1.5rem;
+	.releaseWrapper {
+		width: 100%;
+		border-width: 1px;
+		transition: background-color 300ms ease-in-out;
+		border-radius: 0.375rem;
+		border-color: #eb6027;
 	}
 
-	h3 {
-		color: #00ffcd;
+	.release {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		/* justify-content: space-around; */
+		/* gap: 0.75rem; */
+		padding: 0.75rem;
+	}
+
+	.releaseWrapper:hover {
+		background-color: #586380;
+	}
+
+	.soundtracks {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.soundtrack {
+		width: 100%;
+	}
+
+	.soundtrack h4 {
+		color: #eb6027;
 		font-weight: 700;
-		margin-bottom: 0.25rem;
 	}
 
-	p {
-		font-size: 1rem;
-		line-height: 1.5rem;
+	section {
+		padding-top: 3rem;
+	}
+
+	.release p {
+		padding-left: 2rem;
+		font-size: medium;
+	}
+
+	.release h4 {
+		color: #eb6027;
+		font-weight: 700;
+	}
+
+	.soundtrack p {
+		font-size: medium;
 	}
 
 	a {
-		font-family: IBMPlexMono;
-		background-color: #c1bff6;
 		transition: all 300ms ease-in-out;
 	}
 
@@ -62,16 +126,24 @@
 		line-height: 1.5rem;
 	}
 
-	@media (min-width: 768px) {
+	@media (max-width: 768px) {
 		p {
 			font-size: 1.125rem /* 18px */;
 			line-height: 1.75rem /* 28px */;
 		}
-	}
 
-	@media (min-width: 1024px) {
-		li {
-			width: 50%;
+		.release p {
+			padding-left: 0rem;
+		}
+
+		.release {
+			flex-direction: column;
+			display: flex;
+			align-items: start;
+		}
+
+		section {
+			padding-top: 1.5rem;
 		}
 	}
 </style>

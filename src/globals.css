@@ -15,6 +15,7 @@ html,
 body {
 	font-family: 'Archivo';
 	margin: 0;
+	color: white;
 }
 
 h1 {
@@ -30,6 +31,12 @@ h2 {
 }
 
 h3 {
+	font-size: 1rem /* 16px */;
+	line-height: 1.5rem /* 24px */;
+	font-weight: 600;
+}
+
+h4 {
 	font-size: 1rem /* 16px */;
 	line-height: 1.5rem /* 24px */;
 	font-weight: 600;
@@ -64,6 +71,12 @@ p {
 		font-size: 1.5rem /* 24px */;
 		line-height: 2rem /* 32px */;
 		line-height: 1.25;
+	}
+
+	h4 {
+		font-size: 1.25rem /* 16px */;
+		line-height: 1.5rem /* 24px */;
+		font-weight: 600;
 	}
 
 	p {

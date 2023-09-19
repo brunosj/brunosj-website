@@ -9,11 +9,11 @@
 		<p class="paragraph">Get in touch at:</p>
 		<p>
 			<span class="contactMail">
-				<span>contact </span>
+				<span>mail </span>
 				<span class="contactMailGreen ">[at]</span>
-				<span>landozone</span>
+				<span>brunosj</span>
 				<span class="contactMailGreen ">[dot]</span>
-				<span>net</span>
+				<span>com</span>
 			</span>
 		</p>
 	</div>
@@ -30,6 +30,6 @@
 	}
 
 	.contactMailGreen {
-		color: #00ffcd;
+		color: #eb6027;
 	}
 </style>
