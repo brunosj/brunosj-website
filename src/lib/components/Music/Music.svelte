@@ -63,7 +63,7 @@
 
 <style>
 	a {
-		font-family: IBMPlexMono;
+		font-family: 'IBM Plex Mono', sans-serif;
 		background-color: #394053;
 		transition: all 300ms;
 	}

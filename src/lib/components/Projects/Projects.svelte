@@ -82,7 +82,7 @@
 	}
 
 	.releaseWrapper:hover {
-		background-color: #586380;
+		background-color: #eb6027;
 	}
 
 	.soundtracks {
@@ -112,6 +112,11 @@
 	.release h4 {
 		color: #eb6027;
 		font-weight: 700;
+		transition: all 300ms ease-in-out;
+	}
+
+	.release:hover h4 {
+		color: white;
 	}
 
 	.soundtrack p {
@@ -123,13 +128,7 @@
 	}
 
 	a:hover {
-		background-color: #9795f0;
-	}
-
-	.link {
-		display: inline;
-		font-size: 1rem;
-		line-height: 1.5rem;
+		background-color: #ffaa87;
 	}
 
 	@media (max-width: 768px) {

@@ -1,6 +1,9 @@
 <script>
 	import '../reset.css';
 	import '../globals.css';
+	import '@fontsource-variable/rubik';
+	import '@fontsource/ibm-plex-mono';
+	import '@fontsource-variable/sora';
 	import { fade, fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import SideNav from '$components/Nav/SideNav.svelte';
@@ -35,7 +38,9 @@
 		background-image: linear-gradient(#2e2e2e, #2e2e2e);
 		min-height: 100vh;
 		padding: 1.5rem 0rem;
+		overflow: hidden;
 	}
+
 	.grid {
 		padding: 1.5rem 0rem;
 		display: flex;

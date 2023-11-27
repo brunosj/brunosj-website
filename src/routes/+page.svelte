@@ -25,7 +25,7 @@
 		<h2 in:fly={{ delay: 300, y: 100, duration: 600 }}>web developper & artist</h2>
 
 		<p in:fade={{ delay: 500, duration: 600 }}>
-			hi! my name is <span>bruno sj</span> and I am Berlin-based creative working with code and music.
+			hi! my name is <span>bruno sj</span> and I am Berlin-based creative working with code and music
 		</p>
 	</section>
 {/if}
@@ -46,27 +46,11 @@
 
 <style>
 	h1 {
-		font-weight: 700;
 		color: #eb6027;
-		line-height: 1;
 	}
 
 	p {
 		padding-top: 3rem /* 48px */;
-	}
-
-	a {
-		font-family: IBMPlexMono;
-		background-color: #394053;
-		transition: all 300ms;
-	}
-
-	a:hover {
-		background-color: #586380;
-	}
-
-	.name {
-		font-weight: 700;
 	}
 
 	.mobileSection {

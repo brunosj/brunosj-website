@@ -20,7 +20,9 @@
 	p {
 		font-size: 0.875rem /* 14px */;
 		line-height: 1.25rem /* 20px */;
-		font-family: IBMPlexMono;
+		font-family: 'IBM Plex Mono', sans-serif;
+		letter-spacing: 0.7px;
+		/* text-transform: uppercase; */
 	}
 
 	.socials {
@@ -35,7 +37,7 @@
 	}
 
 	.socials:hover {
-		background-color: #9795f0;
+		background-color: #eb6027;
 	}
 
 	.socialLogo {

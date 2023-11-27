@@ -18,7 +18,7 @@
 		<Heading title="web development" />
 		<p>
 			I'm a developer who enjoys bringing ideas to life on the web. My programming is mostly focused
-			on front-end web development and interactive data vizualizations.
+			on front-end web development and interactive data visualizations.
 		</p>
 		<p class="paragraph">
 			My portfolio can be consulted at <a
@@ -42,7 +42,7 @@
 
 <style>
 	a {
-		font-family: IBMPlexMono;
+		font-family: 'IBM Plex Mono', sans-serif;
 		background-color: #394053;
 		transition: all 300ms;
 	}
